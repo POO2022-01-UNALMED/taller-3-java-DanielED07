@@ -13,11 +13,12 @@ public class TV {
 		
 		this.marca = marca;
 		this.estado = estado;
+		TV.numTV++;
 		
 	}
 	
-	public String getMarca() {
-		 return marca.getNombre();
+	public Marca getMarca() {
+		 return marca;
 	 }
 	public Control getControl() {
 		 return control;
