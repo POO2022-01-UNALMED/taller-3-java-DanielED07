@@ -16,6 +16,10 @@ public class Control {
 		 }	 
 	 }
 	
+	public TV getTv() {
+		return tv;
+	}
+	
 	public void canalUp() {
 		if(tv.estado == true && tv.canal<120) {
 			tv.setCanal(tv.canal+1);
