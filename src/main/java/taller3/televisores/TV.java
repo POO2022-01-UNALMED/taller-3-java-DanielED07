@@ -42,12 +42,12 @@ public class TV {
 		 this.precio=precio;
 	 }
 	public void setVolumen(int volumen) {
-		if(this.estado==true &&this.volumen >=0 && this.volumen <=120) {
+		if(this.estado==true && this.volumen >=0 && this.volumen <=120) {
 		this.volumen=volumen;
 		}
 	 }
 	public void setCanal(int canal) {
-		 if(this.estado==true &&this.canal >=1 && this.canal <=120) {
+		 if(this.estado==true && canal >=1 && canal <=120) {
 		 this.canal=canal; 
 		 }
 	 }
@@ -81,10 +81,10 @@ public class TV {
 	}
 	
 	public void turnOn() {
-		this.estado = false;
+		this.estado = true;
 	}
      public void turnOff() {
-    	 this.estado = true;
+    	 this.estado = false;
 	}
 	public boolean getEstado() {
 		return estado;
