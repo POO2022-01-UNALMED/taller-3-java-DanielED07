@@ -58,6 +58,28 @@ public class TV {
 		return numTV;
 	}
 	
+	public void canalUp() {
+		if(this.estado == true && this.canal<120) {
+			this.setCanal(this.canal+1);
+		}
+		
+	}
+    public void canalDown() {
+        if(this.estado == true && this.canal>1) {
+        	this.setCanal(this.canal-1);
+		}
+	}
+    public void volumenUp() {
+           if(this.estado == true && this.volumen<7) {
+        	   this.setVolumen(this.volumen+1);
+		}
+	}
+    public void volumenDown() {
+    	if(this.estado == true && this.volumen>0) {
+    		this.setVolumen(this.volumen-1);
+ 		}
+	}
+	
 	public void turnOn() {
 		this.estado = false;
 	}
